@@ -1,44 +1,72 @@
 # Markdown to Confluence Converter
 
-MarkdownをConfluence Wiki Markupに変換するWebツールです。
-
-![Screenshot](screenshot.png)
+Markdownファイルを Confluence 記法に変換するWebツールです。
 
 ## 機能
 
-- ✅ リアルタイム変換
-- ✅ 見出し、リスト、コードブロック、テーブルなど主要な要素に対応
-- ✅ ワンクリックコピー機能
-- ✅ シンプルで使いやすいUI
+- ✏️ テキスト入力モード：Markdownを直接入力
+- 📁 ファイルアップロードモード：複数の.mdファイルを一括変換
+- 📄 ソースモード：Confluence記法をコピー可能
+- 👁 プレビューモード：変換結果をプレビュー表示
+- 💾 一括ダウンロード：全ファイルを変換してダウンロード
 
-## サポートされる変換
+## 使い方
 
-| Markdown | Confluence Wiki Markup |
-|----------|------------------------|
-| `# 見出し1` | `h1. 見出し1` |
-| `## 見出し2` | `h2. 見出し2` |
-| `**太字**` | `*太字*` |
-| `*斜体*` | `_斜体_` |
-| `- リスト` | `* リスト` |
-| `1. 番号付き` | `# 番号付き` |
-| ` ```code``` ` | `{code}code{code}` |
-| `` `inline` `` | `{{inline}}` |
-| `[text](url)` | `[text\|url]` |
-| テーブル | Confluenceテーブル |
+### オンラインで使用
+GitHub Pagesでホスティングされているバージョンを使用:
+https://[your-username].github.io/markdown-to-confluence/
 
-## デモ
+### ローカルで使用
 
-[デモページ](https://yourusername.github.io/markdown-to-confluence/)
-
-## ローカルで実行
-
+1. リポジトリをクローン:
 ```bash
-# リポジトリをクローン
-git clone https://github.com/yourusername/markdown-to-confluence.git
+git clone https://github.com/[your-username]/markdown-to-confluence.git
 cd markdown-to-confluence
+```
 
-# 依存関係をインストール
-npm install
+2. ブラウザで開く:
+```bash
+# macOS
+open index.html
 
-# 開発サーバーを起動
-npm run dev
+# Linux
+xdg-open index.html
+
+# Windows
+start index.html
+```
+
+または、index.htmlをブラウザにドラッグ&ドロップしてください。
+
+### Confluenceへの埋め込み
+
+1. Confluenceページを編集モードで開く
+2. `/` を入力してマクロメニューを開く
+3. `HTML` マクロを選択
+4. `index.html` の内容をコピー&ペースト
+5. 保存
+
+## 対応している変換
+
+- 見出し（h1〜h6）
+- 太字・斜体・打ち消し線
+- 箇条書きリスト・番号付きリスト
+- コードブロック・インラインコード
+- リンク・画像
+- 引用
+- 水平線
+- テーブル
+
+## 技術スタック
+
+- React 18.2.0
+- Vanilla JavaScript（CDN経由）
+- HTML5 / CSS3
+
+## ライセンス
+
+MIT License
+
+## 貢献
+
+プルリクエスト歓迎です！バグ報告や機能リクエストはIssueでお願いします。
