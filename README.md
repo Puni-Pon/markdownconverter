@@ -38,13 +38,8 @@ start index.html
 
 または、index.htmlをブラウザにドラッグ&ドロップしてください。
 
-### Confluenceへの埋め込み
-
-1. Confluenceページを編集モードで開く
-2. `/` を入力してマクロメニューを開く
-3. `HTML` マクロを選択
-4. `index.html` の内容をコピー&ペースト
-5. 保存
+### Github Pagesで使用
+https://puni-pon.github.io/markdownconverter/
 
 ## 対応している変換
 
